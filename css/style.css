@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.title{
+    background-color: rgba(40, 40, 206, 0.788);
+    padding: 20px;
+    text-align: center;
+}
+.title .container h1{
+    font-size: 3rem ;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.card{
+    display: flex;
+    background-color: rgba(226, 224, 224, 0.733);
+    border: 1px solid rgba(201, 198, 198, 0.795);
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: baseline;
+    border-radius: 10px;
+}
+.card h4{
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.btn{
+    outline: none;
+    border: none;
+    background-color: none;
+    padding: 5px 10px;
+    line-height: 1.5;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn-success{
+    background-color: rgb(14, 189, 14);
+    color: white;
+}
+/* .table-responsive{
+    overflow-y: scroll;
+} */
+.table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.table th{
+    background-color: rgb(27, 26, 26);
+    color: white;
+}
+.table th , td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+    font-size: 1.3rem;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+}
+.pagination a{
+    margin-left: 10px;
+    text-decoration: none;
+}
+.btn-danger{
+    background-color: rgba(236, 42, 42, 0.918);
+    color: white;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.form{
+    border: 1px solid rgba(165, 165, 165, 0.822);
+    width: 50%;
+}
+.form-header{
+    background-color: rgb(202, 202, 202);
+    padding: 15px;
+}
+.form-body{
+    padding: 20px;
+}
+.form-group{
+    margin:10px 0px ;
+}
+label{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.form-control{
+    display: block;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+    margin-top: 5px;
+    border: none;
+    background-color: lightgray;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+
+.alert-danger{
+    background-color: rgb(228, 72, 72);
+    padding: 20px;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.alert-success{
+    background-color: rgb(103, 243, 48);
+    padding: 20px;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+.active{
+    background-color: rgb(76, 112, 76);
+}
