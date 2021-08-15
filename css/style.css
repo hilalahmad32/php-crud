@@ -132,3 +132,7 @@ label{
 .active{
     background-color: rgb(76, 112, 76);
 }
+#search{
+    width: 50%;
+    display: inline;
+}

@@ -15,6 +15,12 @@ session_start(); ?>
     </div>
 </div>
 <div class="container">
+    <form action="/searching-data.php">
+        <input type="text" name="search" placeholder="Seach Here...." id="search" class="form-control">
+        <button class="btn btn-success">search</button>
+    </form>
+</div>
+<div class="container">
     <?php
 
     if (isset($_SESSION["success"])) {
@@ -43,7 +49,6 @@ session_start(); ?>
 
         $run_sql = mysqli_query($conn, $sql);
         if (mysqli_num_rows($run_sql) > 0) {
-
         ?>
             <table class="table">
                 <thead>
