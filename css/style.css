@@ -136,3 +136,6 @@ label{
     width: 50%;
     display: inline;
 }
+.danger{
+    color: red;
+}

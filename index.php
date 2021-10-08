@@ -1,6 +1,5 @@
 <?php include("header.php");
 session_start(); ?>
-
 <div class="container">
     <div class="card">
         <?php
@@ -33,11 +32,8 @@ session_start(); ?>
     }
     ?>
 
-
     <div class="table-responsive">
         <?php
-
-        include "php/connection.php";
         if(isset($_GET["page"])){
             $page=$_GET["page"];
         }else{
@@ -68,8 +64,8 @@ session_start(); ?>
                             <td><?php echo $row["username"] ?></td>
                             <td><?php echo $row["age"] ?></td>
                             <td><?php echo $row["city"] ?></td>
-                            <td><a href="/edit-data.php?id=<?php echo $row['id'] ?>" class="btn btn-success">Edit</a></td>
-                            <td><a href="/php/delete-data.php?id=<?php echo $row['id'] ?>" class="btn btn-danger">Delete</a></td>
+                            <td><a href="./edit-data.php?id=<?php echo $row['id'] ?>" class="btn btn-success">Edit</a></td>
+                            <td><a href="./php/delete-data.php?id=<?php echo $row['id'] ?>" class="btn btn-danger">Delete</a></td>
                         </tr>
                     <?php } ?>
                 </tbody>
@@ -105,12 +101,4 @@ session_start(); ?>
         </div>
     </div>
 </div>
-
-<!-- 
-<a href="" class="btn btn-success">1</a>
-<a href="" class="btn btn-success">2</a>
-<a href="" class="btn btn-success">3</a>
-<a href="" class="btn btn-success">4</a> -->
-
-
 <?php include "footer.php" ?>
