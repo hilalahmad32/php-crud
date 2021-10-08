@@ -1,6 +1,5 @@
 <?php include("header.php");
 session_start(); ?>
-
 <div class="container">
     <div class="card">
         <?php
@@ -10,12 +9,11 @@ session_start(); ?>
         $row1 = mysqli_num_rows($run_sql1);
         ?>
         <h4>student ( <?php echo  $row1; ?> )</h4>
-        <!--Just for a moment is static-->
-        <a href="add-data.php"><button class="btn btn-success">Add Student</button></a>
+            <a href="add-data.php"><button class="btn btn-success">Add Student</button></a>
     </div>
 </div>
 <div class="container">
-    <form action="/searching-data.php">
+    <form action="./searching-data.php">
         <input type="text" name="search" placeholder="Seach Here...." id="search" class="form-control">
         <button class="btn btn-success">search</button>
     </form>
@@ -33,11 +31,8 @@ session_start(); ?>
     }
     ?>
 
-
     <div class="table-responsive">
         <?php
-
-        include "php/connection.php";
         if(isset($_GET["page"])){
             $page=$_GET["page"];
         }else{
@@ -68,8 +63,8 @@ session_start(); ?>
                             <td><?php echo $row["username"] ?></td>
                             <td><?php echo $row["age"] ?></td>
                             <td><?php echo $row["city"] ?></td>
-                            <td><a href="/edit-data.php?id=<?php echo $row['id'] ?>" class="btn btn-success">Edit</a></td>
-                            <td><a href="/php/delete-data.php?id=<?php echo $row['id'] ?>" class="btn btn-danger">Delete</a></td>
+                            <td><a href="./edit-data.php?id=<?php echo $row['id'] ?>" class="btn btn-success">Edit</a></td>
+                            <td><a href="./php/delete-data.php?id=<?php echo $row['id'] ?>" class="btn btn-danger">Delete</a></td>
                         </tr>
                     <?php } ?>
                 </tbody>
@@ -105,12 +100,4 @@ session_start(); ?>
         </div>
     </div>
 </div>
-
-<!-- 
-<a href="" class="btn btn-success">1</a>
-<a href="" class="btn btn-success">2</a>
-<a href="" class="btn btn-success">3</a>
-<a href="" class="btn btn-success">4</a> -->
-
-
 <?php include "footer.php" ?>

@@ -7,8 +7,11 @@ $database="testing";
 
 
 $conn=mysqli_connect($localhost,$username,$password,$database);
-// if($conn){
-//     echo "Connection successfully";
-// }
 
-?>
+$query = "CREATE TABLE IF NOT EXISTS student(
+    `id` INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    `username` VARCHAR(100) NOT NULL,
+    `age` VARCHAR(50),
+    `city` VARCHAR(50)
+)";
+    mysqli_query($conn, $query);

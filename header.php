@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Php Crud</title>
 </head>
-
 <body>
     
 <div class="title">
